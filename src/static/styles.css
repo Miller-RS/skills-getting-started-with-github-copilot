@@ -74,6 +74,52 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.participants-section strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 100px; /* Limit height and add scroll if needed */
+  overflow-y: auto; /* Add scrollbar if list is long */
+}
+
+.participants-list li {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 4px;
+  background-color: #e9e9e9;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: flex; /* Use flexbox to align email and button */
+  justify-content: space-between; /* Push email and button apart */
+  align-items: center; /* Vertically align items */
+}
+
+/* Style for the delete button */
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828; /* Red color for delete action */
+  cursor: pointer;
+  font-size: 1em; /* Adjust size as needed */
+  padding: 0 0 0 5px; /* Add some space to the left */
+  line-height: 1; /* Ensure proper vertical alignment */
+}
+
+.delete-participant:hover {
+  color: #e53935; /* Darker red on hover */
+}
+
 .form-group {
   margin-bottom: 15px;
 }
